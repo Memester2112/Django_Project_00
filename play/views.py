@@ -5,4 +5,4 @@ from django.http import HttpResponse
 
 
 def say_hello(request):
-    return HttpResponse('Hello from Play App')
+    return render(request,'hello.html',{'name':'Aryendra'})
